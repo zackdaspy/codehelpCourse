@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        img{
+            margin: 10px;
+        }
+        div{
+            border: 1px solid black;
+        }
+        .image2{
+             /* top: 100px;
+             position: relative;
+             left: 200px; */
+             /* position: absolute;
+             top: 100px; */
+        }
+        .image4{
+            position: fixed;
+        }
+        .image3{
+            position: sticky;
+            top: 100px;
+        }
+        .container{
+            position: relative;
+            height: 800px;
+            background-color: peru;
+        }
+        .box{
+            background-color: aquamarine;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p>
+        Static, relative, absolute, fixed, sticky, 
+        What is CSS position property?
+        Position property says how an element is positioned 
+        in a document.
+        IMG is inline element.
+        By default static position property being applied.
+        Relative position is applied to move the img within the window.
+        And we have 4 properties to give spacing they are top, left, bottom,
+        margin. Gap is still maintained.
+        Absolute positon will take the previous space and covers it., as it the
+        closest positon in center. gap is not maintained and img overlapped.
+    </p>  -->
+    <div class="container">
+        <img src="img1.jpg"
+        alt="Poster 1"
+        width="300px" 
+        height="300px"
+        class="image1"/>
+
+        <img src="img2.jpg"
+        alt="Poster 2"
+        width="300px"
+        height="300px"
+        class="image2"/>
+
+        <img src="img3.jpg"
+        alt="Poster 3"
+        width="300px"
+        height="300px"
+        class="image3"/>
+
+        <img src="img4.jpg"
+        alt="Poster 4"
+        width="300px"
+        height="300px"
+        class="image4"/>
+    </div>
+    <div class="box">
+        <p>
+            difference between fixed and sticky.
+            Sticky is related to parent container.
+            Fixed is related to overall window.
+        </p>
+    </div>
+</body>
+</html>
