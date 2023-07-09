@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap;  */
+            height: 500px;
+            /* justify-content: center;  */
+            align-items: start;
+            align-content: center;
+        }
+        .box{
+            height: 200px;  
+            width: 200px;
+            border: 2px solid brown;
+            margin: 2px;
+            padding: 2px;
+        }
+        #box1{
+            background-color: aqua;
+            /* order: 500; */
+            /* flex-shrink: 4; */
+            /* flex-grow: 1; */
+            /* flex-basis: 400px; */
+            align-self: center;
+        }
+        #box2{
+            background-color: palevioletred;
+            /* flex-grow: 1; */
+            align-self: start;
+        }
+        #box3{
+            background-color: orange;
+            /* flex-grow: 1; */
+            align-self: end;
+        }
+        #box4{
+            background-color: green;
+            /* order: -1;
+            flex-grow: 1; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+    </div>
+    <!-- <p>
+        display :flex
+        flex-direction has row, row-reverse, column, 
+        column-reverse.
+        flex-wrap has nowrap, wrap, wrap-reverse.
+        short hand notation flex-flow
+        justify-content has center,start,end,space-around,
+        space-between, space evenly.
+        Align Items has start, end, center,strech
+        Align-content has start
+        Flex-items has properties such as
+        Order for change in sequencing,
+        Flex-Shrink....decreases
+        Flex-grow....increases.........
+        short hand notation flex-grow,flex-shrink,flex-basis in one line
+        Align Self has start,end,center,strech in vertical axis 
+    </p> -->
+</body>
+</html>

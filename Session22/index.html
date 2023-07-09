@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadow Effects</title>
+    <style>
+        :root{
+            --primary-color: pink;
+            --custom-width: 340px;
+        }
+        .container{
+            background-color: yellow;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            /* x-offset and y-offset then blur radius 
+            spread radius*/
+            box-shadow: 10px 15px var(--primary-color); 
+            /* box-shadow: 10px 15px 5px green; */
+            /* box-shadow: 10px 15px 5px 20px red; */
+            /* box-shadow: inset 10px 15px red; */
+            /* box-shadow: 10px 15px red, 15px 8px green; */
+        }
+        img{ 
+            height: 100px;
+        }
+        #head1{
+            /* text-shadow: 13px 3px 8px red; */
+            /* text-shadow: green 12px 13px 2px; */
+            /* text-shadow: white 12px 13px; 
+            by default shadow color will be same as text 
+            color */
+            text-shadow: 12px 13px;
+        }
+    </style>  
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="earth.jpg"/>
+            <h2 id="head1">Welcome to EARTH</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Optio ipsam eaque 
+                asperiores dolorem id minima corrupti 
+                esse facere doloribus nihil laboriosam 
+                voluptatem, est iure repellendus provident 
+                distinctio! Culpa laudantium odio vel qui aut. 
+                Temporibus, sint cum! Neque, ullam magnam explicabo 
+                consequatur hic quae, accusamus 
+                incidunt nisi sit, similique architecto illo?
+            </p>
+          </div>
+    </div> 
+</body>
+</html> 
