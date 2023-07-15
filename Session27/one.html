@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Card</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card{
+    width: 360px;
+    height: 650px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card img{
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+}
+.textbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 25px; */
+    padding: 20px;
+    text-align: center;
+}
+#amountBox{
+    width: 80%;
+    height: 9%;
+    background-color: pink;
+    border-radius: 20px;
+}
+#payButton{
+    width: 80%;
+    height: 9%;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 60px 80px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
+    font-weight: bold;
+}
+.cancelBox{
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+    font-size: large;
+}
+.amountBox{
+    width: 80%;
+    height: 10%;
+    background-color: #80D0C7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    flex-wrap: wrap;
+}
+.leftBox{
+    /* width: fit-content; */
+    /* height: 100%; */
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.imgBox img{
+    height: 2rem;
+    width: 2rem;
+}
+.rightBox{
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="vrhead.jpg"/>
+
+            <div class="textbox">
+                <h2>
+                    Order Summary
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Fuga nam delectus 
+                    facilis nihil obcaecati possimus saepe 
+                    
+                </p>
+            </div> 
+            <div id="amountBox">
+                <div class="leftBox">
+                    <div class="imgBox">
+                        <img src="music.jpg"
+                        />
+                    </div>
+                    <div class="amountBox">
+                        <p>Amount</p>
+                        <p>$999.90</p>
+                        <a href="#">Change</a>
+                    </div>
+                </div>
+            </div>
+            <button id="payButton">
+                Proceed to Payment
+            </button>
+            <div class="cancelBox">
+                <a href="#">Cancel Order</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
